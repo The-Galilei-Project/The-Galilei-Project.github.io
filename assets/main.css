@@ -79,6 +79,85 @@ body {
 }
 
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    z-index: 99999;
+    background-color: var(--navbar-color);
+}
+
+.navbar .navbar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 900px;
+    height: 50px;
+}
+
+.navbar .nav-toggle {
+    display: none;
+}
+
+.navbar .dark-toggle {
+    cursor: pointer;
+}
+
+.navbar .dark-toggle i {
+    color: var(--third-text-color);
+}
+
+.navbar .dark-toggle:hover i {
+    color: var(--strong-text-color);
+}
+
+.navbar .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar .menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.navbar .menu ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.navbar .menu ul li a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: var(--third-text-color);
+    font-weight: 500;
+}
+
+.navbar .menu ul li a:hover {
+    color: var(--text-color);
+}
+
+.navbar .menu ul li.active a {
+    color: var(--text-color);
+}
+
+.navbar .menu .logo img {
+    height: 70px;
+    transform: translate(0, 25%);
+}
+
+/* .navbar {
     backdrop-filter: blur(10px);
     position: fixed;
     width: 100%;
@@ -185,11 +264,11 @@ body {
 }
 .navbar .navbar-inner .container .nav .btn-play:active {
     filter: brightness(0.6);
-}
+} */
 
-.banner{
+.banner {
     height: 100vh;
-    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url(../assets/images/gifs/vid2.gif);
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(../assets/images/gifs/vid2.gif);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -275,7 +354,7 @@ body {
     margin-right: 20px;
 }
 
-.cards .card .card-body .card-grid .card-column{
+.cards .card .card-body .card-grid .card-column {
     margin-left: 0px;
     margin-right: 0px;
 }
