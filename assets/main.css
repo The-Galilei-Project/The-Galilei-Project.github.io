@@ -44,6 +44,10 @@ html[data-theme='dark'] {
     overflow-x: hidden;
 }
 
+h1, h2, h3, h4, h5, h6{
+    font-weight: 500;
+}
+
 .loader {
     position: fixed;
     top: 0;
@@ -92,7 +96,7 @@ body {
     width: 100vw;
     z-index: 99999; 
     background-color: var(--navbar-color);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 /* .navbar .navbar-upper {
@@ -109,8 +113,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
-    max-width: 1200px;
+    width: 95%;
     height: 70px;
 }
 
@@ -118,7 +121,7 @@ body {
     border: 2px solid var(--third-text-color);
     border-radius: 10px;
     width: 125px;
-    transition: 0.2s;
+    transition: all 0.2s ease-in-out;
 }
 
 .navbar .navbar-inner .btn-play .logo-play {
@@ -128,12 +131,12 @@ body {
     text-decoration: none;
     color: var(--third-text-color);
     padding: 5px 10px;
-    transition: 0.2s;
+    transition: all 0.2s ease-in-out;
 }
 
 .navbar .navbar-inner .btn-play .logo-play img {
     filter: brightness(0.4);
-    transition: 0.2s;
+    transition: all 0.2s ease-in-out;
 }
 
 .navbar .navbar-inner .btn-play:hover {
@@ -157,16 +160,12 @@ body {
 .navbar .dark-toggle i,
 .navbar .social-link i {
     color: var(--third-text-color);
+    transition: all 0.2s ease-in-out;
 }
 
-.navbar .dark-toggle:hover i,
-.navbar .social-link .drop-button:hover i {
+.navbar .dark-toggle i:hover,
+.navbar .social-link i:hover {
     color: var(--strong-text-color);
-    transition: 0.2s;
-}
-
-.navbar .social-link .drop-section {
-    display: none;
 }
 
 .navbar .social-link a {
@@ -205,7 +204,7 @@ body {
 
 .navbar .menu ul li a:hover {
     color: var(--text-color);
-    transition: 0.2s;
+    transition: all 0.2s ease-in-out;
 }
 
 .navbar .menu ul li.active a {
@@ -265,13 +264,13 @@ body {
 .navbar .navbar-inner .container .nav li.active {
     text-decoration: none;
     color: var(--third-text-color);
-    transition: 0.2s;
+    transition: all 0.2s ease-in-out;
     border-bottom: 3px var(--secondary-color) solid;
 }
 
 #theme-toggle {
     color: var(--third-text-color);
-    transition: 0.2s;
+    transition: all 0.2s ease-in-out;
     cursor: pointer;
 }
 
@@ -285,7 +284,7 @@ body {
     justify-content: center;
     text-decoration: none;
     color: var(--third-text-color);
-    transition: 0.2s;
+    transition: all 0.2s ease-in-out;
     width: 100%;
     height: 100%;
 }
@@ -307,7 +306,7 @@ body {
     background-color: var(--secondary-color);
     border-radius: 10px;
     width: 125px;
-    transition: 0.2s;
+    transition: all 0.2s ease-in-out;
 }
 
 .navbar .navbar-inner .container .nav .btn-play .logo-play {
@@ -347,9 +346,9 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0 20px;
-    width: 1200px;
+    width: 95%;
     margin: 20px auto;
+    border: 1px solid red;
 }
 
 .cards .card {
@@ -360,10 +359,10 @@ body {
     width: 100%;
     margin: 10px 0;
     padding: 20px 40px;
-    background-color: var(--third-color);
-    border-radius: 10px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    /* border-radius: 10px; */
+    /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25); */
     margin: 10px 0;
+    border: 1px solid green;
 }
 
 .cards .card .card-title {
@@ -381,10 +380,11 @@ body {
 
 .cards .card .card-body img:not(.slideshow .slide img) {
     /* display: inline-block; */
-    max-width: 300px;
-    max-height: 300px;
+    /* max-width: 300px;
+    max-height: 300px; */
     display: inline;
     margin: 10px 0 20px 0;
+    height: 300px;
 }
 
 .cards .card .card-body .card-grid {
@@ -430,7 +430,7 @@ body {
     display: inline-flex;
     width: 100%;
     height: 100%;
-    transition: 0.2s;
+    transition: all 0.2s ease-in-out;
 }
 
 .slideshow .slide {
@@ -468,7 +468,7 @@ footer {
 footer .footer-social,
 footer .footer-grid,
 footer .footer-copyright {
-    width: 1200px;
+    width: 95%;
     padding: 30px 0;
     margin: auto;
 }
@@ -506,7 +506,7 @@ footer .footer-social-inner .footer-social a i{
     font-size: 25px;
     color: var(--text-color);
     text-decoration: none;
-    transition: 0.2s;
+    transition: all 0.2s ease-in-out;
 }
 
 footer .footer-social-inner .footer-social a i:hover{
