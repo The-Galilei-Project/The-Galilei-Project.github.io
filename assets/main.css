@@ -285,7 +285,7 @@ body {
     display: inline;
 }
 
-.cards .card .card-body img:not(.slideshow .slide img) {
+.cards .card .card-body img.side {
     /* display: inline-block; */
     /* max-width: 300px;
     max-height: 300px; */
@@ -311,11 +311,11 @@ body {
     padding-bottom: 10px;
 }
 
-.cards .card:nth-child(odd) .card-body img:not(.slideshow .slide img) {
+.cards .card:nth-child(odd) .card-body img.side {
     float: right;
 }
 
-.cards .card:nth-child(even) .card-body img:not(.slideshow .slide img) {
+.cards .card:nth-child(even) .card-body img.side {
     float: left;
     margin-right: 20px;
 }

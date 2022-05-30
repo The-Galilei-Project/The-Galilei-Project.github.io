@@ -12,8 +12,11 @@ header:
 
 main:
     - Esplora Il Galilei
+        - Gira per l'istituto, esplora le classi e i laboratori.
     - Interagisci Con I Professori
+        - Interagisci con i professori, gli oggetti e senti cosa hanno da dirti.
     - Scopri Gli Easter Egg
+        - Scopri i segreti nascosti nella scuola e scova tutti gli Easter Egg.
 
 footer:
     - &copy; 2022
