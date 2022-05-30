@@ -1,0 +1,19 @@
+header:
+    left:
+        - icon
+    center:
+        - Home
+        - Team
+    right:
+        - GitHub
+        - Facebook
+        - Instagram
+        - Youtube
+
+main:
+    - Esplora Il Galilei
+    - Interagisci Con I Professori
+    - Scopri Gli Easter Egg
+
+footer:
+    - &copy; 2022
