@@ -90,7 +90,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    z-index: 99999;
+    z-index: 99999; 
     background-color: var(--navbar-color);
     transition: all 0.3s ease-in-out;
 }
@@ -110,11 +110,11 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    max-width: 900px;
+    max-width: 1200px;
     height: 70px;
 }
 
-.navbar .navbar-inner  .btn-play {
+.navbar .navbar-inner .btn-play {
     border: 2px solid var(--third-text-color);
     border-radius: 10px;
     width: 125px;
@@ -136,16 +136,14 @@ body {
     transition: 0.2s;
 }
 
-.navbar .navbar-inner .btn-play .logo-play:hover img {
-    filter: brightness(1);
-}
-
-.navbar .navbar-inner .btn-play .logo-play:hover {
-    color: var(--strong-text-color);
-}
-
 .navbar .navbar-inner .btn-play:hover {
     border-color: var(--strong-text-color);
+}
+
+.navbar .navbar-inner .btn-play:hover .logo-play,
+.navbar .navbar-inner .btn-play:hover .logo-play img {
+    color: var(--strong-text-color);
+    filter: brightness(1);
 }
 
 .navbar .nav-toggle {
@@ -344,15 +342,13 @@ body {
     align-items: center;
 }
 
-.banner
-
 .cards {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     padding: 0 20px;
-    max-width: 1000px;
+    width: 1200px;
     margin: 20px auto;
 }
 
@@ -394,6 +390,7 @@ body {
 .cards .card .card-body .card-grid {
     display: flex;
     gap: 20px;
+    border: 1px solid red;
 }
 
 .cards .card .card-body .card-grid .card-column {
@@ -402,6 +399,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
+    border: 1px solid red;
 }
 
 .cards .card .card-body .card-grid .card-column img {
@@ -470,7 +468,7 @@ footer {
 footer .footer-social,
 footer .footer-grid,
 footer .footer-copyright {
-    width: 1000px;
+    width: 1200px;
     padding: 30px 0;
     margin: auto;
 }
