@@ -10,43 +10,64 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
             rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="../assets/images/G-logo.png">
-        <link rel="stylesheet" href="../assets/main.css">
+        <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png">
+        <link rel="stylesheet" href="../assets/team.css">
 
         <script src="https://kit.fontawesome.com/c39fe6a4d3.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-        <title>GREG WEBSITE</title>
+        <title>Day One</title>
     </head>
 
     <body>
-        <!-- <div class="loader">
-            <div class="loader-inner">
-                <div class="loader-inner-inner"></div>
-            </div>
-        </div> -->
         <div class="navbar">
             <div class="navbar-inner">
-                <div class="container">
-                    <a class="brand" href="#">
-                        <img src="../assets/images/G-logo.png" alt="Logo" width="42" height="30">
-                    </a>
-                    <ul class="nav">
-                        <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-                        <li class="active"><a href="grafica.html"><i class="fa-solid fa-palette"></i> Grafica</a></li>
-                        <li><a href="programmazione.html"><i class="fa-solid fa-laptop-code"></i> Programmazione</a>
-                        </li>
-                        <li title="Chiaro/Scuro" id="theme-toggle">
-                            <i class="fa-solid fa-moon"></i>
-                            <i style="margin-left:4px" class="fa-solid fa-bolt"></i>
-                            <!-- <i class="fa-solid fa-circle-half-stroke"></i> -->
-                        </li>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <!-- <div class="dark-toggle fit" id="theme-toggle">
+                    <i class="fa-solid fa-moon"></i>
+                    <i style="margin-right:4px" class="fa-solid fa-bolt"></i>
+                </div> -->
+                <div class="navbar-icon fit">
+                    <img src="../assets/images/favicon.png" alt="favicon">
+                </div>
+                <div class="menu fit">
+                    <ul class="links">
+                        <li class="active"><a href="">home</a></li>
+                        <!-- <div class="logo">
+                        <img src="../assets/images/dayone-title.png" alt="">
+                    </div> -->
                         <div class="btn-play">
                             <a class="logo-play" href="https://play.unity.com/mg/other/greg-v-2-02" target="_blank">
                                 <img src="../assets/images/unity-logo.png" alt="" width="30" height="30">
                                 Gioca
                             </a>
                         </div>
+                        <li><a href="">team</a></li>
                     </ul>
+                </div>
+                <div class="social-link fit">
+                    <!-- <i class="fa-solid fa-link"></i>
+                    <i class="fa-solid fa-caret-down"></i> -->
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/GalileoGalileiOstiglia" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/iiss_galileo_galilei_ostiglia" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/c/IstitutoGGalileiOstiglia" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -60,145 +81,91 @@
                             <br>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         </p> -->
-                        <img src="../assets/images/greg-title.png" alt="title">
+                        <img id="title" src="../assets/images/dayone-title.png" alt="title">
                     </div>
                 </div>
             </div>
-            <div class="cards">
-                <div class="card">
-                    <div class="card-title">
-                        <h2>Parti realizzate</h2>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-grid">
-                            <div class="card-column">
-                                <img src="../assets/images/cards/bib-image.png" alt="">
-                                <h3>Biblioteca e Aula Insegnanti</h3>
-                                <p>
-                                    Abbiamo ricreato la biblioteca del
-                                    nostro istituto con all'interno l'aula insegnati
-                                </p>
+            <section class="team-cards">
+                <h1>Cosa puoi fare all'interno del videogioco?</h1>
+
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="avatar">
+                                <img src="../assets/images/icon-game-1.png" alt="">
                             </div>
-                            <div class="card-column">
-                                <img src="../assets/images/cards/laboratorio-image.png" alt="">
-                                <h3>Laboratorio</h3>
-                                <p>
-                                    Laboratorio utilizzato da tutti gli studenti del
-                                    nostro istituto durante le ore di informatica o disegno tecnico
-                                </p>
-                            </div>
-                            <div class="card-column">
-                                <img src="../assets/images/cards/aula-borsellino.png" alt="">
-                                <h3>Aula Borsellino</h3>
-                                <p>
-                                    Stanza dedicata alla visione di film, riunioni del giornalino
-                                    d'istituto,presentazioni. Un'area dove vengono sperimentate nuove tecniche di
-                                    apprendimento; come la didattica sartoriale.
-                                </p>
+                            <div class="info">
+                                <h2 class="name">Nome</h2>
+                                <p class="role">Ruolo</p>
                             </div>
                         </div>
                     </div>
-                    <div class="card-footer">
+                    <!-- <div class="card">
+                        <div class="card-body">
+                            <div class="avatar">
+                                <img src="../assets/images/icon-game-1.png" alt="">
+                            </div>
+                            <div class="info">
+                                <h2 class="name">Nome</h2>
+                                <p class="role">Ruolo</p>
+                            </div>
+                        </div>
                     </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="avatar">
+                                <img src="../assets/images/icon-game-1.png" alt="">
+                            </div>
+                            <div class="info">
+                                <h2 class="name">Nome</h2>
+                                <p class="role">Ruolo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="avatar">
+                                <img src="../assets/images/icon-game-1.png" alt="">
+                            </div>
+                            <div class="info">
+                                <h2 class="name">Nome</h2>
+                                <p class="role">Ruolo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="avatar">
+                                <img src="../assets/images/icon-game-1.png" alt="">
+                            </div>
+                            <div class="info">
+                                <h2 class="name">Nome</h2>
+                                <p class="role">Ruolo</p>
+                            </div>
+                        </div>
+                    </div> -->
                 </div>
-                <div class="card">
-                    <div class="card-title">
-                    </div>
-                    <div class="card-body">
-                        <div class="slideshow-container">
-                            <div class="slideshow">
-                                <div class="slide">
-                                    <img src="../assets/images/cards/liceo-realtà-vs-gioco1.png" alt="">
-                                </div>
-                                <div class="slide">
-                                    <img src="../assets/images/cards/liceo-realtà-vs-gioco2.png" alt="">
-                                </div>
-                                <div class="slide">
-                                    <img src="../assets/images/cards/liceo-realtà-vs-gioco-3.png" alt="">
-                                </div>
-                                <div class="slide">
-                                    <img src="../assets/images/cards/oggetti-disegnati.png" alt="">
-                                </div>
-                                <div class="slide">
-                                    <img src="../assets/images/cards/liceo-realtà-vs-gioco1.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-title">
-                        <h2>Parti non realizzate</h2>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-grid">
-                            <div class="card-column">
-                                <img src="../assets/images/cards/cinema.jpg" alt="">
-                                <h3>L'Atelier del cinema</h3>
-                                <p>
-                                    Quest'anno nella nostra scuola è stato inaugurato l'atelier
-                                    del cinema con lettere, e rappresentazioni di personaggi famosi.
-                                </p>
-                            </div>
-                            <div class="card-column">
-                                <img src="../assets/images/cards/ingranaggio.png" alt="">
-                                <h3>Laboratorio di meccanica</h3>
-                                <p>
-                                    Laboratorio utilizzato dai ragazzi del corso di meccatronica
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                    </div>
+            </section>
+            <div class="unity-banner">
+                <img src="../assets/images/made-with-unity-white.png" alt="">
+                <p>
+                    Scopri gli script e i software che abbiamo utilizzado per creare Day One, tramite il nostro
+                    Github.
+                </p>
+                <div class="btn-unity">
+                    <a class="logo-unity" href="" target="_blank">
+                        <i class="fa-brands fa-github"></i> Dettagli
+                    </a>
                 </div>
             </div>
         </main>
         <footer>
             <div class="footer-inner">
-                <div class="footer-grid">
-                    <div class="row">
-                        <h3>Grafica</h3>
-                        <ul>
-                            <li>Alessandro Marcheselli</li>
-                            <li>Alexia Mantovani</li>
-                            <li>Alexandra Miscoci</li>
-                            <li>Alessandro Furci</li>
-                            <li>Giacomo Modenesi</li>
-                            <li>Andrea Bianchini</li>
-                            <li>Jiaxiang Xu</li>
-                            <li>Nicholas Bassi</li>
-                            <li>Gabriel Neagu</li>
-                        </ul>
-                    </div>
-                    <div class="row">
-                        <h3>Programmazione</h3>
-                        <ul>
-                            <li>David Zhu</li>
-                            <li>Alessandro Marcheselli</li>
-                            <li>Denny Pirani</li>
-                            <li>Brian Bushi</li>
-                            <li>Marco Gandolfi</li>
-                            <li>Alessandro Mantovani</li>
-                            <li>Lorenzo Ghirotto</li>
-                            <li>Alessio Monesi</li>
-                            <li>Nicholas Baratella</li>
-                        </ul>
-                    </div>
-                    <div class="row">
-                        <h3>Assemblaggio</h3>
-                        <ul>
-                            <li>Alessandro Marcheselli</li>
-                            <li>Alexia Mantovani</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="copyright">
-                    &copy; 2022 - Website created with ❤️ by Matteo Baldi, Alessio Ganzarolli, Alessandro Ausili Popa &
-                    4°I
-                </div>
+                <img src="../assets/images/abba-title.png" alt="abba-title" width="300px">
+                <p>
+                    Day One © Copyright 2021-2022 AbbA Studio <br>
+                    Website created with 💚 by Matteo Baldi, Alessio Ganzarolli, Alessandro Ausili Popa
+                </p>
             </div>
         </footer>
     </body>

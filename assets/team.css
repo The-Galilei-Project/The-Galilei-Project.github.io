@@ -1,0 +1,93 @@
+@import url('main.css');
+
+.team-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    width: 95%;
+    margin: 50px auto;
+}
+
+.team-cards h1 {
+    font-size: 2.5rem;
+    margin: 30px;
+    padding: 0;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.cards {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 30px auto;
+}
+
+.card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: crosshair;
+}
+
+.card .card-body {
+    position: relative;
+}
+
+.card .card-body .avatar {
+    z-index: 10;
+}
+
+.card .card-body .avatar,
+.card .card-body .avatar img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.card .card-body .avatar img {
+    object-fit: cover;
+    display: block;
+}
+
+.card .card-body .info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2));
+    z-index: 11;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.card:hover .card-body .info {
+    opacity: 1;
+    visibility: visible;
+}
+
+.card .card-body .info>p,
+.card .card-body .info>h2 {
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+.card .card-body .info .name {
+    /* font-size: 20px; */
+    color: var(--strong-text-color);
+}
+
+.card .card-body .info .role {
+    margin-left: auto;
+    color: var(--text-color);
+}
