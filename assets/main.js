@@ -1,11 +1,20 @@
 // navbar show/hide
 var lastScroll = 0;
 
-$(document).scroll(function(){
+$(document).scroll(() => {
+    let scroll = $(this).scrollTop();
+    let height = $('.unity-banner').height();
+
+    console.log(height);
+
+    // $(".unity-banner").css("background-position", `50% calc(40% + ${scroll / height}px)`)
+});
+
+$(document).scroll(function () {
     var scroll = $(this).scrollTop();
-    
-    if (scroll){
-        if (scroll > lastScroll){
+
+    if (scroll) {
+        if (scroll > lastScroll) {
             /* console.log("down"); */
 
             $(".navbar").css("transform", "translate(0, -100%)");
