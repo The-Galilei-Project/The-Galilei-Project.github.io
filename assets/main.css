@@ -253,17 +253,23 @@ body {
 /* unity banner */
 
 .unity-banner {
+    
+
+    background-image: url(../assets/images/screenshot/screen_classe3.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.unity-banner-content {
+    background: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.9));
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-
-    background: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.9)), url(../assets/images/screenshot/screen_classe3.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: scroll;
 }
 
 .unity-banner img,

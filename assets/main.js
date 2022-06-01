@@ -1,14 +1,20 @@
-// navbar show/hide
-var lastScroll = 0;
+// se l'elemento è in viewport (funzione presa da internet)
+// $.fn.isInViewport = function() {
+//     var elementTop = $(this).offset().top;
+//     var elementBottom = elementTop + $(this).outerHeight();
 
+//     var viewportTop = $(window).scrollTop();
+//     var viewportBottom = viewportTop + $(window).height();
+
+//     return elementBottom > viewportTop && elementTop < viewportBottom;
+// };
 $(document).scroll(() => {
     let scroll = $(this).scrollTop();
-    let height = $('.unity-banner').height();
-
-    console.log(height);
-
-    // $(".unity-banner").css("background-position", `50% calc(40% + ${scroll / height}px)`)
+    $(".unity-banner").css("background-position", `50% calc(50% + ${scroll/8 - 250}px)`);
 });
+
+// navbar show/hide
+var lastScroll = 0;
 
 $(document).scroll(function () {
     var scroll = $(this).scrollTop();
