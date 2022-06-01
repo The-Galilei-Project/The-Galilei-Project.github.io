@@ -8,10 +8,6 @@
 
 //     return elementBottom > viewportTop && elementTop < viewportBottom;
 // };
-$(document).scroll(() => {
-    let scroll = $(this).scrollTop();
-    $(".unity-banner").css("background-position", `50% calc(50% + ${scroll/8 - 250}px)`);
-});
 
 // navbar show/hide
 var lastScroll = 0;
@@ -44,6 +40,14 @@ if (storedTheme)
 else
     document.documentElement.setAttribute('data-theme', 'light');
 
+$(document).scroll(() => {
+    let scroll = $(this).scrollTop();
+    var position = $(".unity-banner").position();
+    var top = position.top;
+    var left = position.left;
+
+    $(".unity-banner").css("background-position", `50% calc(50% + ${(scroll - top) / 6.5}px)`);
+});
 
 toggle.addEventListener("click", () => {
     var currentTheme = document.documentElement.getAttribute("data-theme");

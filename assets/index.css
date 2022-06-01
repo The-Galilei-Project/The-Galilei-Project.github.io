@@ -161,3 +161,18 @@
     align-items: center;
     padding: 10px;
 }
+
+@media screen and (max-width: 480px) {
+
+    .banner {
+        height: 50vh;
+    }
+
+    .banner .banner-inner .banner-text {
+        text-align: center;
+    }
+
+    .banner .banner-inner .banner-text img {
+        width: 75%;
+    }
+}

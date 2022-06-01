@@ -28,7 +28,7 @@
 .cards {
     width: 70%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
     margin: 30px auto;
 }
@@ -44,7 +44,7 @@
     position: relative;
 }
 
-.card .card-body a{
+.card .card-body a {
     text-decoration: none;
     cursor: crosshair;
 }
