@@ -46,7 +46,7 @@ $(document).scroll(() => {
     var top = position.top;
     var left = position.left;
 
-    $(".unity-banner").css("background-position", `50% calc(50% + ${(scroll - top) / 6.5}px)`);
+    $(".unity-banner").css("background-position", `50% calc(50% + ${(scroll - top) / 8}px)`);
 });
 
 toggle.addEventListener("click", () => {

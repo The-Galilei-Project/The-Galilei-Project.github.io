@@ -24,6 +24,7 @@
     flex-wrap: wrap;
     width: 95%;
     margin: 20px auto;
+    gap: 30px;
 }
 
 .cards .card {
@@ -94,7 +95,7 @@
     margin: auto;
     /* margin-bottom: 10px; */
     border-radius: 20px;
-    width: 100%;
+    /* width: 100%; */
 }
 
 
@@ -175,4 +176,16 @@
     .banner .banner-inner .banner-text img {
         width: 75%;
     }
+
+    .cards .card .card-body .card-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card-version .card-body img {
+        width: 80%;
+    }
 }
+
+    

@@ -260,6 +260,8 @@ body {
     background-position: center center;
     background-size: cover;
     background-attachment: scroll;
+
+    transition: all 0.8s ease-in-out;
 }
 
 .unity-banner-content {
@@ -376,25 +378,6 @@ footer .footer-inner {
     text-align: center;
 }
 
-/* footer .footer-inner .footer-grid {
-    margin: auto;
-    display: flex;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 1000px;
-    height: 100%; 
+@media screen and (max-width: 480px) {
+    
 }
-
-footer .footer-inner .row{
-    width: 50%;
-    text-align: right;
-}
-
-footer h3 {
-    color: var(--secondary-color);
-    text-transform: uppercase;
-}
-
-footer ul li {
-    list-style: none;
-} */
