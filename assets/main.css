@@ -105,7 +105,8 @@ body {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    z-index: 99999;
+    height: 70px;
+    z-index: 99;
     background-color: var(--navbar-scrolled-color);
     transition: all 0.2s ease-in-out;
 }
@@ -120,6 +121,46 @@ body {
     height: 40px;
 } */
 
+.navbar .mobile-inner {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 15px;
+    z-index: 998;
+}
+
+.navbar .mobile-inner .hamburger {
+    z-index: 999;
+}
+
+.navbar .mobile-inner .hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--play-color);
+    margin: 5px 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 70px);
+    z-index: 100;
+    background-color: var(--navbar-scrolled-color);
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+}
+
+.mobile-menu .links ul li a {
+    color: var(--strong-text-color);
+    text-decoration: none;
+}
+
 .navbar .navbar-inner {
     display: flex;
     justify-content: space-between;
@@ -128,12 +169,12 @@ body {
     height: 70px;
 }
 
-.navbar .navbar-inner .navbar-icon img {
+.navbar .logo img {
     width: 60px;
     cursor: pointer;
 }
 
-.navbar .navbar-inner .navbar-icon img:active {
+.navbar .logo img:active {
     filter: brightness(0.8);
 }
 
@@ -253,7 +294,7 @@ body {
 /* unity banner */
 
 .unity-banner {
-    
+
 
     background-image: url(../assets/images/screenshot/screen_classe3.png);
     background-repeat: no-repeat;
@@ -278,6 +319,11 @@ body {
 .unity-banner p,
 .unity-banner btn-unity {
     margin: 40px;
+}
+
+.unity-banner img {
+    width: calc(100% - 40px *2);
+    max-width: 700px;
 }
 
 .unity-banner p {
@@ -316,15 +362,6 @@ body {
     color: var(--strong-text-color);
     filter: brightness(1);
 }
-
-/* .cards .card:nth-child(odd) .card-body img.side {
-    float: right;
-}
-
-.cards .card:nth-child(even) .card-body img.side {
-    float: left;
-    margin-right: 20px;
-} */
 
 .slideshow-container {
     position: relative;
@@ -379,5 +416,20 @@ footer .footer-inner {
 }
 
 @media screen and (max-width: 480px) {
-    
+
+    .mobile-menu.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .navbar .mobile-inner {
+        display: flex;
+    }
+
+    .navbar .navbar-inner {
+        display: none;
+    }
 }

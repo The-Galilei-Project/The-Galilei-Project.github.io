@@ -18,7 +18,6 @@ $(document).scroll(function () {
     if (scroll) {
         if (scroll > lastScroll) {
             /* console.log("down"); */
-
             $(".navbar").css("transform", "translate(0, -100%)");
         } else {
             /* console.log("up"); */
@@ -44,9 +43,21 @@ $(document).scroll(() => {
     let scroll = $(this).scrollTop();
     var position = $(".unity-banner").position();
     var top = position.top;
-    var left = position.left;
 
     $(".unity-banner").css("background-position", `50% calc(50% + ${(scroll - top) / 8}px)`);
+});
+
+$(".navbar .mobile-inner .hamburger").click(() => {
+
+    $(".mobile-menu").toggleClass("active");
+
+    // scroll
+
+    if ($(".mobile-menu").hasClass("active")) {
+        $("*").css("overflow", "hidden");
+    } else {
+        $("*").removeAttr("style");
+    }
 });
 
 toggle.addEventListener("click", () => {

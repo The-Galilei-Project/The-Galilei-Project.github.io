@@ -60,6 +60,15 @@
     border-radius: 20px;
 }
 
+.cards .card:nth-child(odd) .card-body img.side {
+    float: right;
+}
+
+.cards .card:nth-child(even) .card-body img.side {
+    float: left;
+    margin-right: 20px;
+}
+
 .cards .card .card-body .card-grid {
     display: flex;
     gap: 100px;
@@ -187,5 +196,3 @@
         width: 80%;
     }
 }
-
-    
