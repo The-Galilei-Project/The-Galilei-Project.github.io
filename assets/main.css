@@ -156,9 +156,27 @@ body {
     overflow: hidden;
 }
 
-.mobile-menu .links ul li a {
+.mobile-menu .links {
+    text-align: center;
+}
+
+.mobile-menu .links a {
+    text-align: center;
+    font-size: 20pt;
     color: var(--strong-text-color);
     text-decoration: none;
+}
+
+.mobile-menu .social-link {
+    padding: 20px 0;
+}
+
+.mobile-menu .social-link a {
+    text-align: center;
+    font-size: 20pt;
+    color: var(--strong-text-color);
+    text-decoration: none;
+    padding: 0 20px;
 }
 
 .navbar .navbar-inner {
@@ -167,6 +185,12 @@ body {
     align-items: center;
     width: 95%;
     height: 70px;
+}
+
+.navbar .logo button.scrollToTop{
+    background-color: transparent;
+    border: none;
+    outline: none;
 }
 
 .navbar .logo img {
@@ -294,14 +318,11 @@ body {
 /* unity banner */
 
 .unity-banner {
-
-
     background-image: url(../assets/images/screenshot/screen_classe3.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     background-attachment: scroll;
-
     transition: all 0.8s ease-in-out;
 }
 
@@ -413,6 +434,25 @@ footer .footer-inner {
     margin: auto;
     color: var(--text-color);
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    .mobile-menu.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .navbar .mobile-inner {
+        display: flex;
+    }
+
+    .navbar .navbar-inner {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 480px) {

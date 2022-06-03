@@ -1,4 +1,4 @@
-// se l'elemento è in viewport (funzione presa da internet)
+// se l'elemento è in viewport
 // $.fn.isInViewport = function() {
 //     var elementTop = $(this).offset().top;
 //     var elementBottom = elementTop + $(this).outerHeight();
@@ -21,11 +21,33 @@ $(document).scroll(function () {
             $(".navbar").css("transform", "translate(0, -100%)");
         } else {
             /* console.log("up"); */
-
             $(".navbar").css("transform", "translate(0, 0)");
         }
     }
     lastScroll = scroll;
+});
+
+// animated image background in unity-banner
+$(document).scroll(() => {
+    let scroll = $(this).scrollTop();
+    var position = $(".unity-banner").position();
+    var top = position.top;
+
+    $(".unity-banner").css("background-position", `50% calc(50% + ${(scroll - top) / 8}px)`);
+});
+
+// hamburger section toggle for smaller devides
+$(".navbar .mobile-inner .hamburger").click(() => {
+
+    $(".mobile-menu").toggleClass("active");
+
+    // scroll
+
+    if ($(".mobile-menu").hasClass("active")) {
+        $("*").css("overflow", "hidden");
+    } else {
+        $("*").removeAttr("style");
+    }
 });
 
 // theme toggle
@@ -39,26 +61,7 @@ if (storedTheme)
 else
     document.documentElement.setAttribute('data-theme', 'light');
 
-$(document).scroll(() => {
-    let scroll = $(this).scrollTop();
-    var position = $(".unity-banner").position();
-    var top = position.top;
 
-    $(".unity-banner").css("background-position", `50% calc(50% + ${(scroll - top) / 8}px)`);
-});
-
-$(".navbar .mobile-inner .hamburger").click(() => {
-
-    $(".mobile-menu").toggleClass("active");
-
-    // scroll
-
-    if ($(".mobile-menu").hasClass("active")) {
-        $("*").css("overflow", "hidden");
-    } else {
-        $("*").removeAttr("style");
-    }
-});
 
 toggle.addEventListener("click", () => {
     var currentTheme = document.documentElement.getAttribute("data-theme");
