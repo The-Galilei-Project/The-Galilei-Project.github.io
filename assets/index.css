@@ -19,12 +19,17 @@
 .cards {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     width: 95%;
     margin: 20px auto;
     gap: 30px;
+}
+
+.cards .title {
+    text-align: center;
+    font-size: 2.5rem;
 }
 
 .cards .card {
@@ -184,6 +189,15 @@
 
     .banner .banner-inner .banner-text img {
         width: 75%;
+    }
+
+    .cards .title {
+        text-align: center;
+        font-size: 2.1rem;
+    }
+
+    .card .card-summary .card-title h2 {
+        font-size: 1.6rem;
     }
 
     .cards .card .card-body .card-grid {

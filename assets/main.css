@@ -28,7 +28,7 @@ html[data-theme='dark'] {
 
     --text-color: #d1d0d1;
     --strong-text-color: #f4f4f4;
-    --third-text-color: #565a5f;
+    --third-text-color: #60656a;
 }
 
 [data-theme='light'] .fa-solid.fa-bolt,
@@ -111,16 +111,6 @@ body {
     transition: all 0.2s ease-in-out;
 }
 
-/* .navbar .navbar-upper {
-    padding-top: 15px;
-    display: flex;
-    justify-content: center;
-}
-
-.navbar .navbar-upper img{
-    height: 40px;
-} */
-
 .navbar .mobile-inner {
     display: none;
     justify-content: space-between;
@@ -154,12 +144,10 @@ body {
     background-color: var(--navbar-scrolled-color);
     backdrop-filter: blur(5px);
     overflow: hidden;
-    border: 1px solid red;
 }
 
 .mobile-menu .links {
     text-align: center;
-    background-color: aqua;
 }
 
 .mobile-menu .links a {
@@ -473,5 +461,9 @@ footer .footer-inner {
 
     .navbar .navbar-inner {
         display: none;
+    }
+
+    .unity-banner div p {
+        text-align: center;
     }
 }
