@@ -148,16 +148,18 @@ body {
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100vw;
-    height: calc(100vh - 70px);
+    width: 100%;
+    height: calc(100% - 70px);
     z-index: 100;
     background-color: var(--navbar-scrolled-color);
     backdrop-filter: blur(5px);
     overflow: hidden;
+    border: 1px solid red;
 }
 
 .mobile-menu .links {
     text-align: center;
+    background-color: aqua;
 }
 
 .mobile-menu .links a {
@@ -187,7 +189,7 @@ body {
     height: 70px;
 }
 
-.navbar .logo button.scrollToTop{
+.navbar .logo button.scrollToTop {
     background-color: transparent;
     border: none;
     outline: none;
