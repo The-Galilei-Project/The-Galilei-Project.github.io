@@ -177,7 +177,7 @@ body {
     height: 70px;
 }
 
-.navbar .logo button.scrollToTop {
+#scrollToTop {
     background-color: transparent;
     border: none;
     outline: none;
@@ -196,6 +196,8 @@ body {
     width: calc(100%/3);
     flex: 1 1 auto;
 }
+
+/* btnplay navbar */
 
 .navbar .navbar-inner .btn-play {
     border: 2px solid var(--third-text-color);
@@ -228,6 +230,42 @@ body {
     color: var(--strong-text-color);
     filter: brightness(1);
 }
+
+/* btnplay navbar mobile */
+
+.btn-play {
+    border: 2px solid var(--third-text-color);
+    border-radius: 10px;
+    width: 125px;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-play .logo-play {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+    color: var(--third-text-color);
+    /* padding: 5px 0px; */
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-play .logo-play img {
+    filter: brightness(0.4);
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-play:hover {
+    border-color: var(--strong-text-color);
+}
+
+.btn-play:hover .logo-play,
+.btn-play:hover .logo-play img {
+    color: var(--strong-text-color);
+    filter: brightness(1);
+}
+
+/* navbar */
 
 .navbar .nav-toggle {
     display: none;
@@ -426,7 +464,7 @@ footer .footer-inner {
     text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 950px) {
 
     .mobile-menu.active {
         display: flex;
@@ -442,6 +480,10 @@ footer .footer-inner {
 
     .navbar .navbar-inner {
         display: none;
+    }
+
+    .unity-banner div p {
+        text-align: center;
     }
 }
 

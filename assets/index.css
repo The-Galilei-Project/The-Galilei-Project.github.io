@@ -28,6 +28,7 @@
 }
 
 .cards .title {
+    color: var(--strong-text-color);
     text-align: center;
     font-size: 2.5rem;
 }
@@ -102,7 +103,7 @@
 
 .cards .card .card-body .card-grid .card-column.card-null h3,
 .cards .card .card-body .card-grid .card-column.card-null p {
-    color: var(--third-text-color)
+    color: var(--third-text-color);
 }
 
 .cards .card .card-body .card-grid .card-column img {
@@ -177,6 +178,14 @@
     padding: 10px;
 }
 
+@media screen and (max-width: 1100px) {
+    
+    .cards .card .card-body .card-grid {
+        display: flex;
+        gap: 50px;
+    }
+}
+
 @media screen and (max-width: 480px) {
 
     .banner {
@@ -206,7 +215,8 @@
         gap: 20px;
     }
 
-    .card-version .card-body img {
+    .card-version .card-body{
+        margin: auto;
         width: 80%;
     }
 }

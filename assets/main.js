@@ -27,6 +27,22 @@ $(document).scroll(function () {
     lastScroll = scroll;
 });
 
+// scrollToTop button
+
+$(".logo.fit #scrollToTop").each(function () {
+    $(this).click(function () {
+        $('html,body').animate({ scrollTop: 0 }, 'slow');
+        return false;
+    });
+});
+
+$(".logo #scrollToTop").each(function () {
+    $(this).click(function () {
+        $('html,body').animate({ scrollTop: 0 }, 'slow');
+        return false;
+    });
+});
+
 // animated image background in unity-banner
 $(document).scroll(() => {
     let scroll = $(this).scrollTop();
