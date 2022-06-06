@@ -8,6 +8,14 @@
     align-items: center;
 }
 
+.banner .banner-inner .banner-text {
+    text-align: center;
+}
+
+img#title {
+    width: 75%;
+}
+
 .team-cards {
     display: flex;
     flex-direction: column;
@@ -22,7 +30,7 @@
     margin: 30px;
     padding: 0;
     text-align: center;
-    color: var(--text-color);
+    color: var(--strong-text-color);
 }
 
 .cards {

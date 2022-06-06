@@ -56,19 +56,31 @@ $(document).scroll(() => {
 $(".navbar .mobile-inner .hamburger").click(() => {
 
     $(".mobile-menu").toggleClass("active");
-    var first = $(".hamburger :first-child");
-    var last = $(".hamburger :last-child");
+    $(".hamburger").toggleClass("activated");
+    // var first = $(".hamburger :first-child");
+    // var last = $(".hamburger :last-child");
 
-    first.css("transform", "translate(0, 5px) rotate(-0.125turn)");
-    last.css("transform", "translate(0, -5px) rotate(0.125turn)");
+    // first.css("transform", "translate(0, 5px) rotate(-0.125turn)");
+    // last.css("transform", "translate(0, -5px) rotate(0.125turn)");
 
     // scroll
 
-    if ($(".mobile-menu").hasClass("active")) {
-        $("*").css("overflow", "hidden");
-    } else {
-        $("*").removeAttr("style");
+
+    function disableScroll(event) {
+        event.preventDefault();
     }
+
+    if ($(".mobile-menu").hasClass("active")) {
+        $("html").css("overflow", "hidden");
+    } else {
+        $("html").css("overflow", "auto");
+    }
+
+    // if ($(".mobile-menu").hasClass("active")) {
+    //     $("*").css("overflow", "hidden");
+    // } else {
+    //     $("*").removeAttr("style");
+    // }
 });
 
 // theme toggle

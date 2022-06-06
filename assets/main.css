@@ -106,7 +106,7 @@ body {
     align-items: center;
     width: 100vw;
     height: 70px;
-    z-index: 99;
+    z-index: 999;
     background-color: var(--navbar-scrolled-color);
     transition: all 0.2s ease-in-out;
 }
@@ -134,17 +134,29 @@ body {
 }
 
 .mobile-menu {
-    display: none;
+    /* height: 0; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
-    bottom: 0;
+    top: 70px;
     left: 0;
     width: 100%;
-    height: calc(100% - 70px);
+    height: calc(100vh - 70px);
     z-index: 100;
     background-color: var(--navbar-scrolled-color);
     backdrop-filter: blur(5px);
     overflow: hidden;
+    transform: translateY(-110%);
+    transition: all 0.4s ease-out;
+    opacity: 0;
 }
+
+/* .mobile-menu>* {
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+} */
 
 .mobile-menu .links {
     text-align: center;
@@ -467,43 +479,31 @@ footer .footer-inner {
 @media screen and (max-width: 950px) {
 
     .mobile-menu.active {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        transition: all 0.2s ease-in-out;
+        transform: translateY(0%);
+        height: calc(100vh - 70px);
+        opacity: 1;
     }
+
+    /* .mobile-menu.active>* {
+        visibility: visible;
+    } */
 
     .navbar .mobile-inner {
         display: flex;
+    }
+
+    .navbar .mobile-inner .hamburger.activated span:first-child {
+        transform: translate(0, 5px) rotate(-0.125turn);
+    }
+
+    .navbar .mobile-inner .hamburger.activated span:last-child {
+        transform: translate(0, -5px) rotate(0.125turn);
     }
 
     .navbar .navbar-inner {
         display: none;
     }
 
-    .unity-banner div p {
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 480px) {
-
-    .mobile-menu.active {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        transition: all 0.2s ease-in-out;
-    }
-
-    .navbar .mobile-inner {
-        display: flex;
-    }
-
-    .navbar .navbar-inner {
-        display: none;
-    }
 
     .unity-banner div p {
         text-align: center;
