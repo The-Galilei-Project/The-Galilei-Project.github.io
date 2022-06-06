@@ -48,7 +48,7 @@ $(document).scroll(() => {
     let scroll = $(this).scrollTop();
     var position = $(".unity-banner").position();
     var top = position.top;
-
+    // ☕
     $(".unity-banner").css("background-position", `50% calc(50% + ${(scroll - top) / 8}px)`);
 });
 
@@ -56,6 +56,11 @@ $(document).scroll(() => {
 $(".navbar .mobile-inner .hamburger").click(() => {
 
     $(".mobile-menu").toggleClass("active");
+    var first = $(".hamburger :first-child");
+    var last = $(".hamburger :last-child");
+
+    first.css("transform", "translate(0, 5px) rotate(-0.125turn)");
+    last.css("transform", "translate(0, -5px) rotate(0.125turn)");
 
     // scroll
 
