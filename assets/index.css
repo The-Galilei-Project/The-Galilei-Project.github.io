@@ -196,6 +196,10 @@
 
 @media screen and (max-width: 768px) {
 
+    .info-cards .cards {
+        gap: 70px;
+    }
+
     .cards.cards-version .card .card-body .card-grid {
         flex-direction: column;
     }
@@ -203,6 +207,16 @@
     .cards.cards-version .card .card-body .card-grid {
         padding: 0 25%;
         flex-direction: column;
+    }
+
+    .cards.cards-version .card .card-body .card-grid .card-column {
+        width: 80%;
+        flex-direction: column;
+    }
+
+
+    .cards.cards-version .card .card-body .card-grid .card-column {
+        margin: auto;
     }
 }
 

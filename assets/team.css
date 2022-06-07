@@ -96,11 +96,23 @@ img#title {
     visibility: visible;
 }
 
-.card .card-body .info>p,
-.card .card-body .info>h2 {
+.card .card-body .info p,
+.card .card-body .info a {
     margin: 0;
     padding: 0;
     color: var(--text-color);
+}
+
+.card .card-body .info a {
+    display: flex;
+}
+
+.card .card-body .info a .git-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    font-size: larger;
 }
 
 .card .card-body .info .name {
@@ -109,6 +121,19 @@ img#title {
 }
 
 .card .card-body .info .role {
-    margin-left: auto;
+    float: right;
     color: var(--text-color);
+}
+
+@media screen and (max-width: 480px) {
+
+    .cards {
+        width: 100%;
+    }
+
+    .card .card-body .info {
+        width: 100%;
+        font-size: 9pt;
+    }
+
 }
