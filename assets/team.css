@@ -6,6 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url('../images/skybg.png') no-repeat center center cover;
 }
 
 .banner .banner-inner .banner-text {
