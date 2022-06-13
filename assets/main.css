@@ -59,17 +59,23 @@ h6 {
     font-weight: 500;
 }
 
-.loader {
+html {
+    background-color: var(--primary-color);
+    overflow: hidden;
+}
+
+#loader {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    background: #fff;
-    z-index: 99999;
+    background: var(--primary-color);
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
+    padding: 0 10%;
 }
 
 ::selection {
@@ -400,7 +406,6 @@ body {
 .unity-banner .btn-unity {
     border: 2px solid var(--third-text-color);
     border-radius: 10px;
-    width: 125px;
     transition: all 0.2s ease-in-out;
     margin-bottom: 40px;
 }

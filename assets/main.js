@@ -9,6 +9,18 @@
 //     return elementBottom > viewportTop && elementTop < viewportBottom;
 // };
 
+// loader
+$(window).on("load", function () {
+    /* console.log("loaded"); */
+
+    setTimeout(function () {
+        $("#loader").fadeOut({
+            duration: 300
+        });
+        $("html").css("overflow", "auto");
+    }, 500);
+});
+
 // navbar show/hide
 var lastScroll = 0;
 
@@ -65,10 +77,6 @@ $(".navbar .mobile-inner .hamburger").click(() => {
 
     // scroll
 
-
-    function disableScroll(event) {
-        event.preventDefault();
-    }
 
     if ($(".mobile-menu").hasClass("active")) {
         $("html").css("overflow", "hidden");

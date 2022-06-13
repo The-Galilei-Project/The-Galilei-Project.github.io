@@ -192,6 +192,10 @@
         display: flex;
         gap: 50px;
     }
+
+    .cards.cards-version .card .card-body .card-grid .info {
+        font-size: 10pt;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -207,6 +211,10 @@
     .cards.cards-version .card .card-body .card-grid {
         padding: 0 25%;
         flex-direction: column;
+    }
+
+    .cards.cards-version .card .card-body .card-grid .info {
+        font-size: smaller;
     }
 
     .cards.cards-version .card .card-body .card-grid .card-column {
@@ -256,6 +264,15 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+    }
+
+    .cards.cards-version .card .card-body .card-grid {
+        padding: 0 10%;
+    }
+
+    .cards.cards-version .card .card-body .card-grid .info {
+        padding: 10px 15px;
+        font-size: 10pt;
     }
 
     .card-version .card-body {
