@@ -61,7 +61,7 @@ $(document).scroll(() => {
     var position = $(".unity-banner").position();
     var top = position.top;
     // ☕
-    $(".unity-banner").css("background-position", `50% calc(50% + ${(scroll - top) / 8}px)`);
+    $(".unity-banner").css("background-position", `50% calc(50% + ${(scroll - top) / 16}px)`);
 });
 
 // hamburger section toggle for smaller devides

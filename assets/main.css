@@ -375,7 +375,6 @@ body {
     background-position: center center;
     background-size: cover;
     background-attachment: scroll;
-    transition: all 0.8s ease-in-out;
 }
 
 .unity-banner-content {
